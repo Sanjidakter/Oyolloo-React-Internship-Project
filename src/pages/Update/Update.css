@@ -1,0 +1,16 @@
+.card-image {
+  width: 420.78px;
+  height: 314px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.small-image {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  width: 130.43px;
+  height: 47px;
+}

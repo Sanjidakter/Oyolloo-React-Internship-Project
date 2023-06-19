@@ -9,6 +9,7 @@ import Team from '../pages/Team/Team';
 import Expert from '../pages/Experts/Expert';
 import ClientSatisfaction from '../pages/ClientSatisfaction/ClientSatisfaction';
 import Footer from '../shared/Footer/Footer';
+import Update from '../pages/Update/Update';
 
 const Main = () => {
     return (
@@ -21,6 +22,7 @@ const Main = () => {
             <Team></Team>
             <Expert></Expert>
             <ClientSatisfaction></ClientSatisfaction>
+            <Update></Update>
             <Footer> </Footer>
         </div>
     );

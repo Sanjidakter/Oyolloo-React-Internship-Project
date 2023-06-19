@@ -19,6 +19,7 @@ const Services = () => {
             fontWeight: 700,
             fontSize: " 50px",
             lineHeight: "62px",
+            marginBottom:"5%",
             /* or 124% */
 
             letterSpacing: "-0.02em",
@@ -28,22 +29,24 @@ const Services = () => {
             color: "#0F0F0F",
           }}
           >Providing all Console Solution</p>
-          <p className="mb-9">
+          <p className="mb-12">
             Business consultants provide management consulting to help
             businesses organizations improve performance and efficiency.
           </p>
-          <div className="flex items-center mt-4">
-            <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-2">
-              98%
-            </div>
-            <p className="text-gray-700">Satisfaction rate</p>
-          </div>
-          <div className="flex items-center mt-4">
-            <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold mr-2">
-              25M
-            </div>
-            <p className="text-gray-700">Registered users</p>
-          </div>
+         
+          <div className="flex flex-col md:flex-row items-center mt-4">
+  <hr className="mb-4 md:mb-0" />
+  <div className="md:mr-8">
+    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">2760+</h3>
+    <p className="text-orange-500">Total Customers</p>
+  </div>
+  <hr className="mb-4 md:hidden" />
+  <div>
+    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">25+</h3>
+    <p className="text-orange-500">Years Experience</p>
+  </div>
+</div>
+
         </div>
         <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">

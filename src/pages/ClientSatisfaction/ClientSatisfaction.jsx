@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ClientSatisfaction.css";
 
 const ClientSatisfaction = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -43,28 +44,36 @@ const ClientSatisfaction = () => {
           <div className="flex flex-wrap -mx-2">
             <div className="w-1/2 px-2">
               <div className="aspect-w-2 aspect-h-1">
-                {showVideo ? (
-                  <div className="video-popup">
-                    <div className="video-overlay" onClick={closeVideo}></div>
-                    <div className="video-wrapper">
-                      <iframe
-                        title="YouTube Video"
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/watch?v=Rh3tobg7hEo&t=14s"
-                        frameBorder="0"
-                        allowFullScreen
-                      ></iframe>
+                <div>
+                  {showVideo ? (
+                    <div className="video-popup">
+                      <div className="video-overlay" onClick={closeVideo}></div>
+                      <div className="video-wrapper">
+                        <iframe
+                          title="YouTube Video"
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/Rh3tobg7hEo?autoplay=1"
+                          frameBorder="0"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
                     </div>
-                  </div>
-                ) : (
-                  <img
-                    src="/src/assets/cs1.png"
-                    alt="Image 1"
-                    className="object-cover object-center w-full h-full"
-                    onClick={playVideo}
-                  />
-                )}
+                  ) :(
+                    <div className="thumbnail-container" onClick={playVideo}>
+                      <img
+                        src="/src/assets/cs1.png"
+                        alt="Image 1"
+                        className="object-cover object-center w-full h-full"
+                      />
+                      <img
+                        src="/src/assets/Play Icon.png"
+                        alt="Play Icon"
+                        className="play-icon"
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
             <div className="w-1/2 px-2">
