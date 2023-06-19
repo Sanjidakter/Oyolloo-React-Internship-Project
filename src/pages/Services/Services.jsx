@@ -6,9 +6,29 @@ const Services = () => {
     <div className="container mx-auto py-8">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 px-4">
-          <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-          <p>Providing all Console Solution</p>
-          <p>
+          <h2
+            className="text-3xl text-red-600 font-bold mb-8"
+           
+          >
+            - Our Services
+          </h2>
+          <p
+           style={{
+            fontFamily: "Space Grotesk",
+            fontStyle: "normal",
+            fontWeight: 700,
+            fontSize: " 50px",
+            lineHeight: "62px",
+            /* or 124% */
+
+            letterSpacing: "-0.02em",
+
+            /* P/2 */
+
+            color: "#0F0F0F",
+          }}
+          >Providing all Console Solution</p>
+          <p className="mb-9">
             Business consultants provide management consulting to help
             businesses organizations improve performance and efficiency.
           </p>
