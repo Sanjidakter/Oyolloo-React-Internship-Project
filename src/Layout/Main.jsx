@@ -7,6 +7,8 @@ import Features from '../pages/Features/features';
 import Services from '../pages/Services/Services';
 import Team from '../pages/Team/Team';
 import Expert from '../pages/Experts/Expert';
+import ClientSatisfaction from '../pages/ClientSatisfaction/ClientSatisfaction';
+import Footer from '../shared/Footer/Footer';
 
 const Main = () => {
     return (
@@ -18,6 +20,8 @@ const Main = () => {
             <Services></Services>
             <Team></Team>
             <Expert></Expert>
+            <ClientSatisfaction></ClientSatisfaction>
+            <Footer> </Footer>
         </div>
     );
 };
