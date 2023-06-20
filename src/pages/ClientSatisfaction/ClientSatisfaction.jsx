@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ClientSatisfaction.css";
+import { FaArrowUp, FaArrowRight } from "react-icons/fa";
 
 const ClientSatisfaction = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -34,9 +35,16 @@ const ClientSatisfaction = () => {
             height: "50px",
             background: "#495AF0",
           }}
-          className="mt-4 mx-auto"
+          className="mt-4 ml-auto"
         >
-          Discover More
+          <span
+            style={{ padding: "5px", display: "flex", alignItems: "center" }}
+          >
+            Discover More
+            <FaArrowRight
+              style={{ marginLeft: "5px", transform: "rotate(-45deg)" }}
+            />
+          </span>
         </button>
       </div>
       <div className="mt-4 ">
@@ -59,7 +67,7 @@ const ClientSatisfaction = () => {
                         ></iframe>
                       </div>
                     </div>
-                  ) :(
+                  ) : (
                     <div className="thumbnail-container" onClick={playVideo}>
                       <img
                         src="/src/assets/cs1.png"

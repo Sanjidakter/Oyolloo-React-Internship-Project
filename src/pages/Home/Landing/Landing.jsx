@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowUp, FaArrowRight } from 'react-icons/fa';
 
 const Landing = () => {
   return (
@@ -15,17 +16,32 @@ const Landing = () => {
         to identify and unlock potential avenues for innovative ideas
       </p>
       <button className="px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+      <span style={{ display: 'flex', alignItems: 'center' }}>
         Discover More
-      </button>
+        <FaArrowRight style={{ marginLeft: '5px',transform: 'rotate(-45deg)' }} />
+      </span>
+    </button>
       <img
-        className="mt-8 md:hidden"
+        className="mt-8 "
         style={{ width: "372.11px", height: "66.61px" }}
         src="/src/assets/Five Star Review.png"
         alt=""
       />
     </div>
     <div className="w-full md:w-1/2 md:order-2">
-      <div className="flex flex-col">
+      <div className="relative flex flex-col">
+        <img
+          className="hidden md:block absolute top-0 -right-6"
+          style={{ width: "320px", height: "200px" }}
+          src="/src/assets/Card 01.png"
+          alt=""
+        />
+        <img
+          className="w-full h-auto  absolute -bottom-16 -left-12"
+          style={{ width: "300px", height: "308px" }}
+          src="/src/assets/card 02.png"
+          alt=""
+        />
         <img
           className="hidden md:block"
           style={{ width: "520px", height: "618px" }}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Update.css";
+import { FaEye, FaRegFileAlt, FaArrowRight } from "react-icons/fa";
 
 const Update = () => {
   return (
@@ -35,16 +36,29 @@ const Update = () => {
               alt="Small Image"
             />
           </div>
+          <div className="flex md:flex-row mt-3">
+            <p className="mr-16 p-3">Consultant</p>
+            <div className="ml-auto flex items-center p-3">
+              <FaEye className="mx-2" /> 25
+              <FaRegFileAlt className="mx-2" /> 32k
+            </div>
+          </div>
+          <hr />
           <div class="card-body">
             <p>What is a business consultant?</p>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-start">
-              <a href="">Read More-> </a>
+            <p>
+              A business consultant is a professional with a wide array of
+              skills who assists business owners{" "}
+            </p>
+            <div className="card-actions justify-start">
+              <a href="" style={{ display: "flex", alignItems: "center" }}>
+                Read More <FaArrowRight style={{ marginLeft: "5px" }} />
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-100 shadow-xl gap-4">
           <div className="image-container relative">
             <img
               className="card-image"
@@ -57,11 +71,24 @@ const Update = () => {
               alt="Small Image"
             />
           </div>
+          <div className="flex md:flex-row mt-3">
+            <p className="mr-16 p-3">Consultant</p>
+            <div className="ml-auto flex items-center p-3">
+              <FaEye className="mx-2" /> 25
+              <FaRegFileAlt className="mx-2" /> 32k
+            </div>
+          </div>
+          <hr />
           <div class="card-body">
             <p>What is a business consultant?</p>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-start">
-              <a href="">Read More -></a>
+            <p>
+              A business consultant is a professional with a wide array of
+              skills who assists business owners{" "}
+            </p>
+            <div className="card-actions justify-start">
+              <a href="" style={{ display: "flex", alignItems: "center" }}>
+                Read More <FaArrowRight style={{ marginLeft: "5px" }} />
+              </a>
             </div>
           </div>
         </div>
@@ -79,11 +106,24 @@ const Update = () => {
               alt="Small Image"
             />
           </div>
+          <div className="flex md:flex-row mt-3">
+            <p className="mr-16 p-3">Consultant</p>
+            <div className="ml-auto flex items-center p-3">
+              <FaEye className="mx-2" /> 25
+              <FaRegFileAlt className="mx-2" /> 32k
+            </div>
+          </div>
+          <hr />
           <div class="card-body">
             <p>What is a business consultant?</p>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-start">
-              <a href="">Read More-> </a>
+            <p>
+              A business consultant is a professional with a wide array of
+              skills who assists business owners{" "}
+            </p>
+            <div className="card-actions justify-start">
+              <a href="" style={{ display: "flex", alignItems: "center" }}>
+                Read More <FaArrowRight style={{ marginLeft: "5px" }} />
+              </a>
             </div>
           </div>
         </div>
