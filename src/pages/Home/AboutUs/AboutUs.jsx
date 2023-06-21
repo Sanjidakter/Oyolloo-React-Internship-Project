@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import playi1 from "../../../assets/Play icon1.png";
+import about from "../../../assets/about.png";
 
 const AboutUs = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -16,14 +18,14 @@ const AboutUs = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 p-8" style={{ background: "#FFF5DA" }}>
           <div className="relative">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col ">
               <div className="flex items-center mb-4">
                 {!isPopupOpen && (
                   <button
                     onClick={openPopup}
                     className="bg-transparent border-none outline-none cursor-pointer"
                   >
-                    <img src="/src/assets/Play icon1.png" alt="Play Button" />
+                    <img src={playi1} alt="Play Button" />
                   </button>
                 )}
                 {isPopupOpen && (
@@ -58,14 +60,14 @@ const AboutUs = () => {
                     </div>
                   </div>
                 )}
-                <p className="text-black font-bold py-2 px-4 rounded">
-                  More About CP
+                <p className="text-black font-bold py-2 px-4 rounded ">
+                  More <br /> About CP
                 </p>
               </div>
             </div>
 
             <img
-              src="/src/assets/about.png"
+              src={about}
               alt="Company Image"
               className="w-full h-auto"
             />
@@ -75,7 +77,7 @@ const AboutUs = () => {
                   onClick={openPopup}
                   className="bg-transparent border-none outline-none cursor-pointer"
                 >
-                  <img src="/src/assets/Play icon1.png" alt="Play Button" />
+                  <img src={playi1} alt="Play Button" />
                 </button>
               )}
               {isPopupOpen && (
@@ -114,15 +116,13 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 p-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-400">
+          <h2 className="font-bold  mb-4 text-red-600">
             -About Us
           </h2>
-          <p className="text-gray-700 mb-4">
-            We are aware for our quality to successful business. Learn how to
-            start your own business consulting firm. Effective strategies for
-            business consultants and things to consider before becoming a
-            consultant.
-          </p>
+          <h2 className="text-black mb-4 font-space-grotesk font-bold text-4xl leading-tight">
+            We are aware for our <br /> quality to successful <br /> business. 
+          </h2>
+          <p>Learn how to start your own business consulting firm. Effective strategies for business consultants and things to consider before becoming a consultant</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <hr className="mb-4 md:mb-8" />

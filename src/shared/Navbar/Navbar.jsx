@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin, faGoogle, faPinterest } from '@fortawesome/free-brands-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faLinkedin,
+  faGoogle,
+  faPinterest,
+} from "@fortawesome/free-brands-svg-icons";
+import Logo from "../../assets/Logo.png";
+import {  FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   const navItems = (
@@ -31,29 +37,34 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-black p-2">
-        <div className="flex items-center justify-between px-5 py-3">
-          <div className="flex items-center space-x-4 text-ash">
-          <a href="#" className="text-white hover:text-gray-300">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            <FontAwesomeIcon icon={faGoogle} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            <FontAwesomeIcon icon={faPinterest} />
-          </a>
+      <nav className="bg-black p-2 ">
+        <div className="flex flex-col md:flex-row items-center justify-between px-5 py-3">
+          <div className="flex items-center space-x-4 text-ash mb-4 md:mb-0">
+            <a href="#" className="text-white hover:text-gray-300">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              <FontAwesomeIcon icon={faGoogle} />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              <FontAwesomeIcon icon={faPinterest} />
+            </a>
           </div>
-          <div className="text-white mr-16">
-            info.pix@gmail.com
-            <span className="ml-2">(209) 555-0104</span>
+          <div className="text-white">
+            <div className="text-center md:text-right">
+              info.pix@gmail.com
+              <span className="block md:inline ml-0 md:ml-2 mt-2 md:mt-0">
+                (209) 555-0104
+              </span>
+            </div>
           </div>
         </div>
       </nav>
-      <div className="navbar bg-white text-black p-5">
+
+      <div className="navbar bg-white text-black p-5 ">
         {/* Mobile */}
         <div className="lg:hidden">
           <div className="dropdown">
@@ -82,7 +93,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="btn btn-ghost text-xl">
-            <img src="/src/assets/Logo.png" alt="Logo" className="logo-image" />
+            <img src={Logo} alt="Logo" className="logo-image" />
           </Link>
         </div>
 
@@ -92,8 +103,11 @@ const Navbar = () => {
         </div>
 
         {/* CTA */}
-        <div className="hidden ml-16 lg:flex">
-          <a className="btn">Free Consultation</a>
+        <div className="hidden ml-auto  lg:flex">
+          <a className="btn border-black">Free Consultation
+          <FaArrowRight
+                  style={{ marginLeft: "5px", transform: "rotate(-45deg)" }}
+                /></a>
         </div>
       </div>
     </>

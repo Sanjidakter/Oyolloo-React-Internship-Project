@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import featuresPerson from "../../assets/feature.png";
+import { FaArrowRight } from "react-icons/fa";
+import success from "../../assets/successChart.png";
 
 const Features = () => {
   const [expanded, setExpanded] = useState({
@@ -18,8 +21,10 @@ const Features = () => {
     <div className="container mx-auto py-8">
       <div className="flex flex-wrap ">
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4 text-orange-400">-Features</h2>
-          <p className="font-space-grotesk font-bold text-4xl text-gray-900 leading-10 tracking-tight mb-4">Solve your business <br /> problems with our experts</p>
+          <h2 className="text-3xl font-bold mb-4 text-red-600">-Features</h2>
+          <p className="font-space-grotesk font-bold text-4xl text-gray-900 leading-10 tracking-tight mb-4">
+            Solve your business <br /> problems with our experts
+          </p>
           <div className="space-y-4">
             <div className="border border-gray-300 rounded p-4">
               <div className="flex items-center justify-between">
@@ -78,20 +83,22 @@ const Features = () => {
               )}
             </div>
           </div>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded">
-            Discover More
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded flex">
+            Discover More{" "}
+            <FaArrowRight
+              style={{ marginLeft: "5px", transform: "rotate(-45deg)" }}
+            />
           </button>
         </div>
-        <div className="w-full md:w-1/2 mt-4 md:mt-0 ">
+        <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <p className="mt-2 mb-8">
             Business consultants provide management consulting to help
             businesses and organizations improve performance and efficiency.
           </p>
-          <img
-            src="/src/assets/feature.png"
-            alt="Image"
-            className="w-full h-auto"
-          />
+          <div className="relative">
+            <img className="w-full h-auto" src={featuresPerson} alt="" />
+            <img className="absolute w-1/2 h-1/2 -bottom-14 lg:-bottom-28  -left-7 md:-left-10 lg:-left-28 " src={success} alt="" />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./ClientSatisfaction.css";
 import { FaArrowUp, FaArrowRight } from "react-icons/fa";
+import cs1 from "../../assets/cs1.png";
+import cs2 from "../../assets/cs2.png";
+import play from "../../assets/Play Icon.png";
 
 const ClientSatisfaction = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -14,43 +17,22 @@ const ClientSatisfaction = () => {
   };
 
   return (
-    <div className="mt-16 flex flex-col ">
-      <div className="flex ">
-        <p
-          style={{
-            fontFamily: "Space Grotesk",
-            fontStyle: "normal",
-            fontWeight: "700",
-            fontSize: "54px",
-            lineHeight: "62px",
-            letterSpacing: "-0.02em",
-            color: "#0F0F0F",
-          }}
-        >
+    <div className="mt-16 flex flex-col bg-yellow-50">
+      <div className="flex flex-col md:flex-row p-5">
+        <p className="font-space-grotesk font-semibold text-5xl leading-14 tracking-tighter text-black">
           Our Client Says Their <br /> Satisfaction
         </p>
-        <button
-          style={{
-            width: "150px",
-            height: "50px",
-            background: "#495AF0",
-          }}
-          className="mt-4 ml-auto"
-        >
-          <span
-            style={{ padding: "5px", display: "flex", alignItems: "center" }}
-          >
+        <button className="mt-4 md:mt-0 ml-auto p-3 bg-blue-500 text-white rounded h-14 md:h-66">
+          <span className="flex items-center">
             Discover More
-            <FaArrowRight
-              style={{ marginLeft: "5px", transform: "rotate(-45deg)" }}
-            />
+            <FaArrowRight className="ml-2 transform -rotate-45" />
           </span>
         </button>
       </div>
       <div className="mt-4 ">
         <div className="flex justify-center">
           <div className="flex flex-wrap -mx-2">
-            <div className="w-1/2 px-2">
+            <div className="w-full md:w-1/2 px-2">
               <div className="aspect-w-2 aspect-h-1">
                 <div>
                   {showVideo ? (
@@ -70,12 +52,12 @@ const ClientSatisfaction = () => {
                   ) : (
                     <div className="thumbnail-container" onClick={playVideo}>
                       <img
-                        src="/src/assets/cs1.png"
+                        src={cs1}
                         alt="Image 1"
                         className="object-cover object-center w-full h-full"
                       />
                       <img
-                        src="/src/assets/Play Icon.png"
+                        src={play}
                         alt="Play Icon"
                         className="play-icon"
                       />
@@ -84,10 +66,10 @@ const ClientSatisfaction = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 px-2">
+            <div className="w-full md:w-1/2 px-2">
               <div className="aspect-w-2 aspect-h-1">
                 <img
-                  src="/src/assets/cs2.png"
+                  src={cs2}
                   alt="Image 2"
                   className="object-cover object-center w-full h-full"
                 />

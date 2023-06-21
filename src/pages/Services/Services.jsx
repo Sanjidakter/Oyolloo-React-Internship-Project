@@ -1,5 +1,9 @@
 import React from "react";
 import "./Services.css";
+import analysis from "../../assets/analysis.png";
+import analysis2 from "../../assets/analysis2.png";
+import management from "../../assets/management.png";
+import support from "../../assets/support.png";
 
 const Services = () => {
   return (
@@ -37,13 +41,13 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center mt-4">
   <hr className="mb-4 md:mb-0" />
   <div className="md:mr-8">
-    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">2760+</h3>
-    <p className="text-orange-500">Total Customers</p>
+    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">98%</h3>
+    <p className="text-orange-500">Satisfaction rate</p>
   </div>
   <hr className="mb-4 md:hidden" />
   <div>
-    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">25+</h3>
-    <p className="text-orange-500">Years Experience</p>
+    <h3 className="text-2xl md:text-4xl font-bold text-orange-500">25M</h3>
+    <p className="text-orange-500">Registered users</p>
   </div>
 </div>
 
@@ -52,15 +56,13 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
             <div className="border border-gray-300 rounded p-4">
               <img
-                src="/src/assets/analysis.png"
+                src={analysis}
                 alt="Image 1"
                 className="w-20 h-20"
               />
-              <h3 className="text-xl font-bold mt-2">Title 1</h3>
+              <h3 className="text-xl font-bold mt-2">Business Analysis</h3>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque, nunc et imperdiet vestibulum, lectus sem
-                facilisis nisl.
+              Business analysis is a professional discipline of identifying business needs determining
               </p>
               <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Read More
@@ -68,15 +70,13 @@ const Services = () => {
             </div>
             <div className="border border-gray-300 rounded p-4">
               <img
-                src="/src/assets/analysis2.png"
+                src={analysis2}
                 alt="Image 2"
                 className="w-20 h-20"
               />
-              <h3 className="text-xl font-bold mt-2">Title 2</h3>
+              <h3 className="text-xl font-bold mt-2">Financial Analysis</h3>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque, nunc et imperdiet vestibulum, lectus sem
-                facilisis nisl.
+              Business analysis is a professional discipline of identifying business needs determining
               </p>
               <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Read More
@@ -84,15 +84,13 @@ const Services = () => {
             </div>
             <div className="border border-gray-300 rounded p-4">
               <img
-                src="/src/assets/management.png"
+                src={management}
                 alt="Image 3"
                 className="w-20 h-20"
               />
-              <h3 className="text-xl font-bold mt-2">Title 3</h3>
+              <h3 className="text-xl font-bold mt-2">Risk Management</h3>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque, nunc et imperdiet vestibulum, lectus sem
-                facilisis nisl.
+              Business analysis is a professional discipline of identifying business needs determining
               </p>
               <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Read More
@@ -100,15 +98,13 @@ const Services = () => {
             </div>
             <div className="border border-gray-300 rounded p-4">
               <img
-                src="/src/assets/support.png"
+                src={support}
                 alt="Image 4"
                 className="w-20 h-20"
               />
-              <h3 className="text-xl font-bold mt-2">Title 4</h3>
+              <h3 className="text-xl font-bold mt-2">Strategic Consulting</h3>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum scelerisque, nunc et imperdiet vestibulum, lectus sem
-                facilisis nisl.
+              Business analysis is a professional discipline of identifying business needs determining
               </p>
               <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Read More

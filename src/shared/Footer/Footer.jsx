@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "../../assets/Logo.png"
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
       <hr />
       <footer className="footer p-10 bg-black text-white">
         <div>
-          <img className="w-full" src="/src/assets/Logo.png" alt="" />
+          <img className="w-full" src={Logo} alt="" />
           <p>
             Business consultants provide management <br /> consulting to help
             businesses and <br /> organizations improve performance .

@@ -1,6 +1,10 @@
 import React from "react";
 import "./Update.css";
 import { FaEye, FaRegFileAlt, FaArrowRight } from "react-icons/fa";
+import card1 from "../../assets/card1.png";
+import card2 from "../../assets/card2.png";
+import card3 from "../../assets/card3.png";
+import date from "../../assets/Date.png";
 
 const Update = () => {
   return (
@@ -27,12 +31,12 @@ const Update = () => {
           <div className="image-container relative">
             <img
               className="card-image"
-              src="/src/assets/card1.png"
+              src={card1}
               alt="Shoes"
             />
             <img
               className="small-image"
-              src="/src/assets/Date.png"
+              src={date}
               alt="Small Image"
             />
           </div>
@@ -62,12 +66,12 @@ const Update = () => {
           <div className="image-container relative">
             <img
               className="card-image"
-              src="/src/assets/card2.png"
+              src={card2}
               alt="Shoes"
             />
             <img
               className="small-image"
-              src="/src/assets/Date.png"
+              src={date}
               alt="Small Image"
             />
           </div>
@@ -97,12 +101,12 @@ const Update = () => {
           <div className="image-container relative">
             <img
               className="card-image"
-              src="/src/assets/card3.png"
+              src={card3}
               alt="Shoes"
             />
             <img
               className="small-image"
-              src="/src/assets/Date.png"
+              src={date}
               alt="Small Image"
             />
           </div>

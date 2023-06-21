@@ -1,4 +1,8 @@
 import React from 'react';
+import expert1 from "../../assets/expert1.jpg";
+import expert2 from "../../assets/expert2.jpg";
+import expert3 from "../../assets/expert3.jpg";
+import expert4 from "../../assets/expert4.jpg";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import './Expert.css';
@@ -31,11 +35,11 @@ const Expert = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide><img src="/src/assets/expert1.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="/src/assets/expert2.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="/src/assets/experrt3.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="/src/assets/expert4.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="/src/assets/expert1.jpg" alt="" /></SwiperSlide>
+          <SwiperSlide><img src={expert1} alt="" /></SwiperSlide>
+          <SwiperSlide><img src={expert2} alt="" /></SwiperSlide>
+          <SwiperSlide><img src={expert3} alt="" /></SwiperSlide>
+          <SwiperSlide><img src={expert4} alt="" /></SwiperSlide>
+          <SwiperSlide><img src={expert1} alt="" /></SwiperSlide>
          
          
          
