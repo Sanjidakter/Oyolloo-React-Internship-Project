@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,9 +35,24 @@ const Navbar = () => {
     </>
   );
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="bg-black p-2 ">
+      <nav className="bg-black p-2">
         <div className="flex flex-col md:flex-row items-center justify-between px-5 py-3">
           <div className="flex items-center space-x-4 text-ash mb-4 md:mb-0">
             <a href="#" className="text-white hover:text-gray-300">
@@ -64,7 +79,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className="navbar bg-white text-black p-5 ">
+      <div className="navbar bg-white text-black p-5">
         {/* Mobile */}
         <div className="lg:hidden">
           <div className="dropdown">

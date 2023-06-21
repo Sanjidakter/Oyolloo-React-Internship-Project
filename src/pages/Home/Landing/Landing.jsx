@@ -12,6 +12,8 @@ import stackoverflow from "../../../assets/stackoverflow.png";
 import github from "../../../assets/github.png";
 import bg from "../../../assets/bg-shape.png";
 import Marquee from "react-fast-marquee";
+import backgroundImg from "../../../assets/rectangle_bg.png";
+import './Landing.css';
 
 const Landing = () => {
   return (
@@ -42,27 +44,34 @@ const Landing = () => {
               alt=""
             />
           </div>
-          <div className="w-full md:w-1/2 md:order-2">
+          <div className="w-full md:w-1/2 md:order-2 mb-12">
             <div className="relative flex flex-col">
-              <img
-                className="hidden md:block absolute top-0 -right-6"
+            <div className="md:w-full bg-rectangle">
+            <img
+                className="w-full h-auto absolute -top-8 -right-4 md:-top-12 md:-right-32 lg:-right-24 "
                 style={{ width: "320px", height: "200px" }}
                 src={card1}
                 alt=""
               />
-              <img
-                className="w-full h-auto  absolute -bottom-24 -left-24"
+            <img
+                className="w-full h-auto -bottom-28 -left-24  absolute md:-bottom-80 md:-left-24 lg:-bottom-24 lg:-left-24 "
                 style={{ width: "300px", height: "308px" }}
                 src={card2}
                 alt=""
               />
               <img
-                className="hidden md:block"
-                style={{ width: "520px", height: "618px" }}
+                className="hidden md:block "
+                // style={{ width: "520px", height: "618px" }}
+                style={{
+                  width: "520px",
+                  height: "618px",
+                }}
                 src={person}
                 alt=""
               />
               <img className="w-full h-auto md:hidden" src={person} alt="" />
+            </div>
+            
             </div>
           </div>
         </div>
@@ -72,11 +81,11 @@ const Landing = () => {
         <div className="container mx-auto">
           <Marquee gradient>
             <div className="md:p-10 lg:p-24 flex items-center gap-10 lg:gap-20">
-              <img  className="w-auto h-10" src={dribbble} alt="" />
-              <img  className="w-auto h-10" src={behance} alt="" />
-              <img  className="w-auto h-10" src={github} alt="" />
-              <img  className="w-auto h-10" src={instagram} alt="" />
-              <img  className="w-auto h-10" src={stackoverflow} alt="" />
+              <img className="w-auto h-10" src={dribbble} alt="" />
+              <img className="w-auto h-10" src={behance} alt="" />
+              <img className="w-auto h-10" src={github} alt="" />
+              <img className="w-auto h-10" src={instagram} alt="" />
+              <img className="w-auto h-10" src={stackoverflow} alt="" />
             </div>
           </Marquee>
         </div>
